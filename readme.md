@@ -9,7 +9,7 @@ An interactive stock forecasting and decision-support application that combines 
 This project aims to simulate a real-world **market intelligence tool** that helps users understand short-term stock trends using hybrid modeling approaches.
 
 * 📈 **XGBoost** → captures historical patterns
-* 📉 **ARIMA** → performs statistical time-series forecasting
+* 📈 **ARIMA** → performs statistical time-series forecasting
 * 🤝 **Decision Engine** → combines both outputs to generate final signals
 
 ---
