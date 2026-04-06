@@ -1,0 +1,22 @@
+# Virtual env
+stocksvenv/
+venv/
+
+# Ignore raw data
+data/raw/
+
+# Ignore notebooks
+*.ipynb
+
+# Ignore large temp files
+*.csv
+
+# Python cache
+__pycache__/
+*.pyc
+
+# System files
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
