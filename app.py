@@ -41,7 +41,7 @@ company = st.sidebar.selectbox(
     ["TCS", "Infosys", "Wipro", "HCLTech"]
 )
 
-model_choice = st.sidebar.selectbox("Choose Model", ["ARIMA", "XGBoost", "LSTM"])
+model_choice = st.sidebar.selectbox("Choose Model", ["ARIMA", "XGBoost", "LSTM(IN Progress)"])
 n_days = st.sidebar.slider("Number of Days to Forecast", 1, 30, 7)
 st.sidebar.markdown("### 📊 View Options")
 show_chart = st.sidebar.radio("Show Chart View", ["Estimated Prices", "Trend Line"])
@@ -154,6 +154,10 @@ current_price = df["Close"].iloc[-1]
 # --- Prediction Button ---
 if st.button("⚡Run Analysis"):
 
+    if model_choice == "LSTM (In Progress)":
+     st.warning("🚧 Model is in progress. Will be added shortly.")
+     st.stop()
+     
     if "xgb_model" in st.session_state and "X_test_xgb" in st.session_state and "sc_xgb" in st.session_state:
             xgb_predictions = predict_with_xgb(
             n_days,
