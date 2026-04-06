@@ -154,10 +154,6 @@ current_price = df["Close"].iloc[-1]
 # --- Prediction Button ---
 if st.button("⚡Run Analysis"):
 
-    if model_choice == "LSTM (In Progress)":
-     st.warning("🚧 Model is in progress. Will be added shortly.")
-     st.stop()
-     
     if "xgb_model" in st.session_state and "X_test_xgb" in st.session_state and "sc_xgb" in st.session_state:
             xgb_predictions = predict_with_xgb(
             n_days,
@@ -175,6 +171,9 @@ if st.button("⚡Run Analysis"):
          predicted_prices = xgb_predictions
     elif model_choice == "ARIMA":
          predicted_prices = arima_predictions
+    elif model_choice == "LSTM(IN Progress)":
+         st.warning("🚧 Model is in progress. Will be added shortly.")
+         st.stop() 
     else:
             # fallback dummy
             predicted_prices = np.round(
