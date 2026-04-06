@@ -64,7 +64,7 @@ backdrop-filter: blur(12px);
 margin-bottom:20px;
 ">
 
-<h1 style="margin-bottom:5px;">📊 AI Market Intelligence</h1>
+<h1 style="margin-bottom:5px;">TechTrend ~ AI Market Intelligence</h1>
 
 <p style="color:#A0A7B8; font-size:14px;">
 Real-time decision support using ML (XGBoost) + Time Series (ARIMA)
