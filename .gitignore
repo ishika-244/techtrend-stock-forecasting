@@ -10,6 +10,7 @@ venv/
 
 # Ignore large temp files
 *.csv
+!data/raw/*.csv
 
 # Python cache
 __pycache__/
