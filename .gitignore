@@ -2,9 +2,6 @@
 stocksvenv/
 venv/
 
-# Ignore raw data
-data/raw/
-
 # Ignore notebooks
 *.ipynb
 
