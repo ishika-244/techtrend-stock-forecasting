@@ -2,6 +2,9 @@
 stocksvenv/
 venv/
 
+# allow raw stock data
+!data/raw/
+
 # Ignore notebooks
 *.ipynb
 
